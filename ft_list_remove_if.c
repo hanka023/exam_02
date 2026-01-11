@@ -59,7 +59,7 @@ int cmp(void *data1,void *data2)
 
 void ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
 {
-	if (!*begin_list || ! begin_list)
+	if (!begin_list || ! *begin_list)
 		return;
 
 	t_list *remove;
